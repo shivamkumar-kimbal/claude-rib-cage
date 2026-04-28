@@ -1,0 +1,33 @@
+# CLAUDE.local.md — Personal Overrides
+
+> This file is gitignored. Add your own rules here without affecting teammates.
+> Entries here override anything in CLAUDE.md for your local session only.
+
+---
+
+## Personal Preferences
+
+# Example: prefer a specific coding style
+# - Use tabs instead of spaces for indentation.
+# - Always add trailing commas in multi-line objects.
+
+---
+
+## Local Tool Paths
+
+# Example: point to a local binary
+# LINTER_BIN=/usr/local/bin/my-custom-linter
+
+---
+
+## Experimental Rules
+
+# Rules you're testing before proposing to the team go here.
+
+---
+
+## Notes
+
+- This file is never committed to git.
+- It is safe to store personal API keys references (not values!) here.
+- Sync with your `.env.local` for consistency.

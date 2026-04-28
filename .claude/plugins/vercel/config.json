@@ -1,0 +1,9 @@
+{
+  "projectId": "prj_YOUR_PROJECT_ID",
+  "orgId": "team_YOUR_ORG_ID",
+  "regions": ["iad1"],
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "autoAlias": true
+}

@@ -1,0 +1,42 @@
+# ── Local overrides (never commit) ───────────────────────────────────────────
+CLAUDE.local.md
+settings.local.json
+.env
+.env.local
+.env.*.local
+
+# ── OS & editor noise ─────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Node / JS ─────────────────────────────────────────────────────────────────
+node_modules/
+dist/
+.next/
+.nuxt/
+.output/
+.cache/
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ── Build artefacts ───────────────────────────────────────────────────────────
+build/
+out/
+*.log
+
+# ── Secrets & credentials ─────────────────────────────────────────────────────
+*.pem
+*.key
+*.pfx
+secrets/
+
+# ── Claude session state ──────────────────────────────────────────────────────
+.claude/state/
