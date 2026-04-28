@@ -1,0 +1,23 @@
+# statusline — Bottom-bar Display Config
+
+# Format string for the Claude Code status bar.
+# Tokens:
+#   {branch}      current git branch
+#   {dirty}       number of modified files (empty if clean)
+#   {env}         value of CLAUDE_ENV
+#   {model}       active model name
+#   {hook_count}  number of hooks registered
+
+format = "{env} | {branch}{dirty} | {model}"
+
+# Colours (ANSI 256 or named)
+color.env.development = "yellow"
+color.env.production  = "red"
+color.env.staging     = "cyan"
+
+# Show dirty indicator only when there are uncommitted changes
+dirty_indicator = " ●"
+clean_indicator = ""
+
+# Update interval in seconds (0 = on every tool use only)
+refresh_interval = 0

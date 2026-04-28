@@ -1,0 +1,28 @@
+{
+  "model": "claude-opus-4-5",
+  "permissions": {
+    "allow": [
+      "Bash(git:*)",
+      "Bash(npm:*)",
+      "Bash(npx:*)",
+      "Bash(python:*)",
+      "Read(**)",
+      "Write(src/**)",
+      "Write(.claude/**)"
+    ],
+    "deny": [
+      "Bash(rm -rf *)",
+      "Write(.env*)",
+      "Write(secrets/**)"
+    ]
+  },
+  "hooks": {
+    "SessionStart":  [{ "command": "bash .claude/hooks/SessionStart.sh"  }],
+    "PostToolUse":   [{ "command": "bash .claude/hooks/PostToolUse.sh"   }],
+    "PreCompact":    [{ "command": "bash .claude/hooks/PreCompact.sh"    }]
+  },
+  "env": {
+    "CLAUDE_PROJECT": "claude-rib-cage",
+    "CLAUDE_ENV": "development"
+  }
+}
